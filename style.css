@@ -1,227 +1,229 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .container {
-    width: 100%;
-    background-color: rgba(240, 255, 255, 0.315);
+  width: 100%;
+  background-color: rgba(240, 255, 255, 0.315);
 }
 
 .navbar {
-    width: 100%;
-    display: flex;
-    z-index: 999;
-    position: fixed;
-    justify-content: space-between;
-    background-color: gray;
-    padding: 5px 60px;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  z-index: 999;
+  position: fixed;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 5px 60px;
+  align-items: center;
 }
 
 ul {
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    height: 30px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  height: 30px;
 }
 
 ul li {
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul li a {
-    display: inline-block;
-    padding-bottom: 2px;
-    text-decoration: none;
-    color: white;
+  display: inline-block;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: white;
 }
 
 a:hover {
-    border-bottom: 3px solid white;
-    transition: all .09s;
+  border-bottom: 3px solid white;
+  transition: all 0.09s;
 }
 
 .main {
-    width: 100%;
-    padding: 120px 100px;
-    align-items: center;
-    display: flex;
-    background-position: center center;
-    background-image: url(./imgs/url.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: space-between;
+  width: 100%;
+  padding: 120px 100px;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  background-position: center center;
+  background-image: url(./imgs/bg-img.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
 }
 
 .sarlavha {
-    width: 350px;
-    white-space: wrap;
-    text-align: center;
-    line-height: 50px;
-    font-size: 36px;
-    color: white;
+  width: 350px;
+  white-space: wrap;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  color: white;
 }
 
 .userImg {
-    position: relative;
-    width: 430px;
-    height: 430px;
-    border-radius: 15%;
-    animation-name: imgAnim;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+  position: relative;
+  width: 430px;
+  height: 430px;
+  border-radius: 15%;
+  animation-name: imgAnim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 .btn {
-    margin-top: 30px;
-    width: 100%;
-    padding: 10px 20px;
-    font-size: 22px;
-    border: 2px solid white;
-    cursor: pointer;
-    z-index: 999;
-    border-radius: 0 35px 0 35px;
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 22px;
+  border: 2px solid white;
+  cursor: pointer;
+  z-index: 999;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0 35px 0 35px;
 }
 
 .btn:hover {
-    border-radius: 35px 0 35px 0;
-    background: transparent;
-    color: white;
-    transition: all .7s;
-    border-color: red;
+  border-radius: 35px 0 35px 0;
+  background: transparent;
+  color: white;
+  transition: all 0.7s;
+  border-color: red;
 }
 
 @keyframes imgAnim {
-    0% {
-        left: 0px;
-        top: 0px;
-    }
+  0% {
+    left: 0px;
+    top: 0px;
+  }
 
-    25% {
-        left: 45px;
-        top: 0px;
-        box-shadow: 0 0 70px white;
-    }
+  25% {
+    left: 45px;
+    top: 0px;
+    box-shadow: 0 0 70px white;
+  }
 
-    50% {
-        left: 45px;
-        top: 35px;
-        box-shadow: 0 0 50px black;
-    }
+  50% {
+    left: 45px;
+    top: 35px;
+    box-shadow: 0 0 50px black;
+  }
 
-    75% {
-        left: 0px;
-        top: 35px;
-        box-shadow: 0 0 70px white;
-    }
+  75% {
+    left: 0px;
+    top: 35px;
+    box-shadow: 0 0 70px white;
+  }
 
-    100% {
-        left: 0px;
-        box-shadow: 0 0 50px black;
-        top: 0px;
-    }
+  100% {
+    left: 0px;
+    box-shadow: 0 0 50px black;
+    top: 0px;
+  }
 }
 
 /* open button start */
 .btnOpen {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .btnOpen div {
-    width: 32px;
-    height: 4px;
-    background-color: white;
-    margin: 5px 0;
+  width: 32px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
 }
 
 /* open button end */
 
-@media(max-width:992px) {
-    .sarlavha {
-        font-size: 24px;
-    }
+@media (max-width: 992px) {
+  .sarlavha {
+    font-size: 24px;
+  }
 
-    li {
-        font-size: 14px;
-    }
+  li {
+    font-size: 14px;
+  }
 
-    .userImg {
-        width: 330px;
-        height: 330px;
-    }
+  .userImg {
+    width: 330px;
+    height: 330px;
+  }
 
-    .btn {
-        width: 80%;
-    }
+  .btn {
+    width: 80%;
+  }
 }
 
-@media(max-width:776px) {
+@media (max-width: 776px) {
+  .main {
+    display: block;
+    width: 100%;
+  }
 
-    .main {
-        display: block;
-        width: 100%;
+  li {
+    display: none;
+  }
+
+  .sarlavha {
+    width: 100%;
+    font-size: 35px;
+    margin: 0 auto;
+  }
+
+  .btnOpen {
+    display: block;
+  }
+
+  .userImg {
+    width: 80%;
+    height: 360px;
+    margin: 45px 10%;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+  @keyframes imgAnim {
+    0% {
+      top: 0px;
     }
 
-    li {
-        display: none;
+    50% {
+      top: 35px;
+      box-shadow: 0 0 50px white;
     }
 
-    .sarlavha {
-        width: 100%;
-        font-size: 35px;
-        margin: 0 auto;
+    100% {
+      top: 0px;
     }
-
-    .btnOpen {
-        display: block;
-    }
-
-    .userImg {
-        width: 80%;
-        height: 360px;
-        margin: 45px 10%;
-    }
-
-    .btn {
-        width: 80%;
-    }
-
-    @keyframes imgAnim {
-        0% {
-            top: 0px;
-        }
-
-        50% {
-            top: 35px;
-            box-shadow: 0 0 50px white;
-        }
-
-        100% {
-            top: 0px;
-        }
-    }
+  }
 }
 
-@media(max-width:576px) {
-    .sarlavha {
-        width: 100%;
-        font-size: 25px;
-        margin: 0 auto;
-    }
+@media (max-width: 576px) {
+  .sarlavha {
+    width: 100%;
+    font-size: 25px;
+    margin: 0 auto;
+  }
 
-    .userImg {
-        width: 90%;
-        height: 300px;
-        margin: 45px 5%;
-    }
+  .userImg {
+    width: 90%;
+    height: 300px;
+    margin: 45px 5%;
+  }
 }
 
 /* .ul {
